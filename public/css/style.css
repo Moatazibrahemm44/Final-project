@@ -1,0 +1,1752 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --main-color: #01aad6;
+    --light-white: rgba(255, 255, 255, 0.651);
+    --light-black: rgba(0, 0, 0, .3);
+    --light-bg: rgba(255, 255, 255, .1);
+    --white: #fff;
+    --black: #000;
+    --border: .1rem solid rgba(0, 0, 0, .1);
+    --border-hover: .1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+
+
+* {
+    font-family: 'comfortaa', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+*::selection {
+    background-color: var(--main-color);
+    color: var(--black);
+}
+
+*::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--white);
+}
+
+body {
+
+    overflow: hidden;
+}
+
+.container {
+    padding-top: 10rem;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem;
+
+}
+
+.heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 7rem;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.btn {
+    display: block;
+    border-radius: .5rem;
+    padding: 1.2rem 3rem;
+    background: var(--main-color);
+    color: var(--black);
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background: var(--black);
+    color: var(--white);
+    letter-spacing: .17rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, transparent, var(--black));
+    z-index: 1000;
+}
+
+.header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+
+
+.header .flex .logoo img {
+    width: 17rem;
+    height: 92%;
+    position: absolute;
+    left: -10px;
+    top: -8px;
+}
+
+
+
+.header .flex .navbar a {
+    margin-left: 2rem;
+    font-size: 1.8rem;
+    color: var(--light-white);
+    transition: .2s linear;
+}
+
+.header .flex .navbar a:hover {
+    color: var(--white);
+}
+
+.header .flex .icons a {
+    font-size: 2.5rem;
+    margin-left: 0.7rem;
+    padding-right: 1.5rem;
+    color: var(--main-color);
+    cursor: pointer;
+    position: absolute;
+    right: 35px;
+}
+
+.header .flex .icons a:hover {
+    color: rgba(255, 255, 255, 0.086);
+}
+.alert{
+    top: 100px;
+    border-radius: 20px;
+    background-color: rgb(251,211,219);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-bottom: 1.5rem;
+}
+.alert span{
+    font-size: 15px;
+    color: var(--black);
+}
+
+.alert i{
+color:var(--red);
+font-size: 25px;
+cursor: pointer;
+}
+
+.alert i:hover{
+color:var(--black);
+}
+.login {
+    background: url('../images/black.jpg') no-repeat rgba(0, 0, 0, .22);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: 15rem;
+}
+
+.login .containerr {
+    min-height: calc(35vh - 1rem);
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border-radius: 25px;
+    box-shadow: 0 50px 48px rgb(0, 0, 1);
+}
+
+
+.login .containerr form {
+    margin: 0 5rem;
+}
+
+.login .containerr .form-title {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 3.5rem;
+    margin-bottom: 3rem;
+}
+
+.login .containerr form input {
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding-left: 1.5rem;
+    font-size: 15px;
+}
+
+.login .containerr form .input-group {
+    padding: 3% 0;
+    position: relative;
+}
+
+.login .containerr form .input-group i {
+    position: absolute;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.login .containerr form .input-group input:focus {
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 2px solid hsl(192, 98%, 67%);
+}
+
+.login .containerr form .input-group input::placeholder {
+    color: transparent;
+}
+
+.login .containerr form .input-group label {
+    color: #757575;
+    position: relative;
+    left: 2.5em;
+    top: -2.3em;
+    cursor: auto;
+    transition: 0.3s ease all;
+    font-size: 1.5rem;
+}
+
+.login .containerr form .input-group input:focus~label,
+input:not(:placeholder-shown)~label {
+    top: -3em;
+    color: hsl(192, 98%, 67%);
+    font-size: 15px;
+}
+
+.login .containerr form .recover {
+    text-align: right;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
+
+}
+
+.login .containerr form .recover a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.login .containerr form .recover a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.login .containerr form .btn {
+    font-size: 2rem;
+    padding: 10px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+    background: var(--main-color);
+    color: white;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+.login .containerr form .btn:hover {
+    background-color: #000;
+}
+
+.login .containerr form .links {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-weight: bold;
+} 
+
+.login .containerr form .links p {
+    padding-top: .8rem;
+    font-size: 1.5rem;
+}
+
+.login .containerr form .links .a {
+    color: var(--main-color);
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.login .containerr form .links .a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+
+#menu-btn {
+
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--white);
+    display: none;
+}
+
+/* home staart */
+.home {
+    background: url('../images/black.jpg') no-repeat rgba(0, 0, 0, .22);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.home .heading span {
+    color: var(--main-color);
+    font-size: 4.5rem;
+}
+
+.home .heading h1 {
+    font-size: 8rem;
+    margin-bottom: -4rem;
+}
+
+.home .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-bottom: 10rem;
+}
+
+
+
+.home .grid .box {
+    background-color: var(--light-bg);
+    padding: 1.5rem;
+    backdrop-filter: blur(.4rem);
+    border-radius: 3.6rem;
+    position: relative;
+}
+
+
+
+.home .grid .box .price {
+    position: absolute;
+    top: 2.9rem;
+    left: 3rem;
+    border-radius: 1.8rem;
+    background: var(--light-black);
+    font-size: 1.8rem;
+    padding: .8rem 1rem;
+    color: white;
+}
+
+
+
+
+.home .grid .box .price i {
+    color: var(--main-color);
+    margin-right: .5rem;
+
+}
+
+
+
+.home .grid .box .price span {
+    font-size: 1.5rem;
+    color: red;
+    text-decoration: line-through
+}
+
+
+
+.home .grid .box .image {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+.home .grid .box .name {
+    font-size: 2.5rem;
+    color: var(--white);
+
+}
+
+
+
+.home .grid .box .address {
+    font-size: 1.7rem;
+    color: var(--light-white);
+    line-height: 1.5;
+
+}
+
+
+
+.home .grid .box:hover {
+    background-color: var(--light-black);
+}
+
+
+.home .grid .box:hover .price {
+    background-color: var(--black);
+}
+
+/*home Ends*/
+
+/* booking starts */
+.booking {
+    background: url('../images/black.jpg') no-repeat rgba(0, 0, 0, .22);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    min-width: auto;
+    padding: 5rem 10%;
+}
+
+/* .booking {
+    min-height: calc(100vh - 10rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+ */
+
+/* .booking .book-form {
+    background-color: var(--light-bg);
+    border: 3rem double rgba(0, 0, 0, .29);
+    border-radius: 8rem;
+    padding: 3rem;
+    backdrop-filter: blur(.4rem);
+    
+}
+
+
+.booking .book-form .flex {
+    border-radius: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+} */
+
+.booking .inputBox {
+    background-color: var(--light-bg);
+    border-radius: 8rem;
+    padding-bottom: 1rem;
+    backdrop-filter: blur(.4rem);
+    display: flex;
+    padding-right: 1rem;
+}
+
+
+.booking .inputBox .search {
+
+    width: 100%;
+
+    border: none;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: .5rem;
+
+
+}
+
+.booking .inputBox .search .btn {
+    width: 29%;
+    font-size: 2rem;
+    padding: 1.5rem;
+    background: var(--main-color);
+    border-radius: 10rem;
+    color: var(--black);
+}
+
+.booking .inputBox .search .btn:hover {
+    color: white;
+}
+
+
+.booking .inputBox .search input {
+    width: 100%;
+    font-size: 2.5rem;
+    color: var(--white);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: none;
+    background: none;
+    padding-top: 0.6rem;
+    padding: 1.2rem;
+}
+
+
+.booking .inputBox .search label {
+    font-size: 2.5rem;
+    padding: 2rem;
+    color: var(--main-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 5rem;
+    padding-bottom: 0.4rem;
+}
+
+.booking .inputBox .search label:hover {
+    color: var(--light-white);
+}
+
+/* .booking .inputBox .search input:focus{
+    background: var(--light-bg);
+    color: var(--white);
+} */
+
+/* .booking .inputBox input{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 2.5rem;
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 25p;
+    backdrop-filter: blur(.4rem);
+} */
+
+/* .booking .book-form .inputBox input:focus{
+    background: var(--light-bg);
+    color: var(--white);
+} */
+
+.booking .inputBox input:focus::placeholder {
+    color: var(--white);
+}
+
+/* .booking .book-form .inputBox span{
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.booking .book-form .btn{
+    margin-top: 3rem;
+}   */
+
+
+.booking .gril {
+    padding-top: 2rem;
+}
+
+
+.booking .gril .box {
+    position: relative;
+    padding: 2rem;
+    background-color: #dbccfe;
+    border-radius: 5rem;
+}
+
+.booking .gril .box .content .image {
+    position: relative;
+    width: 95%;
+    object-fit: cover;
+    margin-left: 6rem;
+
+}
+
+/* .booking .box .btn{
+    width: 25%;
+    font-size: 2rem;
+    padding: 1.5rem;
+    color: var(--main-color);
+    border-radius: 10rem;
+    color: var(--white);
+} */
+.booking .gril .box .content {
+    /* flex:1 1 48rem; */
+    flex: 1 1 80rem;
+    padding: 3rem;
+    font-size: 2rem;
+}
+
+.booking .gril .box .content h1 {
+    font-weight: bold;
+    color: #301d49;
+    font-size: 5rem;
+    width: 100%;
+}
+
+.booking .gril .box .content h2 {
+    color: #301d49;
+    font-size: 2rem;
+    width: 65%;
+}
+
+.booking .gril .box .content p {
+    font-size: 1.5rem;
+    color: #301d49;
+}
+
+.booking .gril .box .content .btn {
+    background-color: #301d49;
+    color: var(--white);
+    font-size: 2.1rem;
+    width: 30%;
+    padding: 2rem;
+    border-radius: 5rem;
+    text-transform: none;
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+
+.booking .gril .box .content .btn:hover {
+    color: var(--white);
+    background-color: var(--black);
+    letter-spacing: .8rem;
+}
+
+.booking .gril .box .content .btn .fa-location-dot {
+    color: white;
+    margin: 1rem;
+}
+
+
+/* booking ends */
+
+/* about starts */
+.about {
+    background: url('../images/black.jpg') no-repeat rgba(0, 0, 0, .22);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.about .details {
+    border-radius: .5rem;
+    background: url('../images/abouttt.jpg') no-repeat rgba(0, 0, 0, .3);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 60vh;
+    border-radius: .5rem;
+
+}
+
+.about .details .box {
+    width: 50rem;
+    background-color: var(--light-black);
+    padding: 3rem 2rem;
+    text-align: center;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+
+}
+
+.about .details .box h3 {
+    padding-bottom: 1.rem;
+    font-size: 3.5rem;
+    color: var(--light-white);
+}
+
+.about .details .box p {
+    padding: 1rem 0;
+    font-size: 1.9rem;
+    color: var(--white);
+    line-height: 2;
+}
+
+.about .details .box .btn {
+    display: inline-block;
+    width: auto;
+}
+
+.about .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.about .grid .box {
+    background-color: var(--light-bg);
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+}
+
+.about .grid .box img {
+    height: 20rem;
+    transition: .2s linear;
+}
+
+.about .grid .box h3 {
+    padding: 1rem 0;
+    font-size: 2.8rem;
+    color: var(--white);
+}
+
+.about .grid .box p {
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--light-white);
+}
+
+.about .grid .box:hover {
+    background-color: var(--light-black);
+}
+
+.about .grid .box:hover img {
+    transform: scale(1.1);
+}
+
+/* about ends */
+
+/* reviews starts */
+.reviews {
+    background: url('../images/reviews.jpg') no-repeat rgba(0, 0, 0, .65);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.reviews .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.reviews .grid .box {
+    background-color: var(--light-bg);
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+}
+
+.reviews .grid .box img {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.reviews .grid .box h3 {
+    font-size: 2.7rem;
+    color: var(--white);
+}
+
+.reviews .grid .box p {
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--light-white);
+    font-size: 1.8rem;
+}
+
+.reviews .grid .box .stars {
+    margin-top: 1rem;
+}
+
+.reviews .grid .box .stars i {
+    font-size: 1.9rem;
+    color: var(--main-color);
+}
+
+.reviews .grid .box:hover {
+    background-color: var(--light-black);
+}
+
+.reviews .grid .box:hover img {
+    transform: scale(1.1);
+}
+
+/* Reviews end */
+
+/*tours Starts*/
+
+.tours {
+    background: url('../images/black.jpg') no-repeat rgba(0, 0, 0, .22);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.tours .heading span {
+    color: var(--main-color);
+    font-size: 4.5rem;
+}
+
+.tours .heading h1 {
+    font-size: 8rem;
+    margin-top: 1rem
+}
+
+.tours .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-bottom: 10rem;
+}
+
+
+
+.tours .grid .box {
+    background-color: var(--light-bg);
+    padding: 1.5rem;
+    backdrop-filter: blur(.4rem);
+    border-radius: 3.6rem;
+    position: relative;
+}
+
+
+
+
+.tours .grid .box .price {
+    position: absolute;
+    top: 2.9rem;
+    left: 3rem;
+    border-radius: .5rem;
+    background: var(--light-black);
+    font-size: 1.8rem;
+    padding: .8rem 1rem;
+}
+
+
+
+
+.tours .grid .box .price i {
+    color: var(--main-color);
+    margin-right: .5rem;
+
+}
+
+
+
+.tours .grid .box .price span {
+    color: var(--white);
+}
+
+
+
+.tours .grid .box .image {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+.tours .grid .box .name {
+    font-size: 2.5rem;
+    color: var(--white);
+
+}
+
+
+
+.tours .grid .box .address {
+    font-size: 1.7rem;
+    color: var(--light-white);
+    line-height: 1.5;
+
+}
+
+
+
+.tours .grid .box:hover {
+    background-color: var(--light-black);
+}
+
+
+.tours .grid .box:hover .price {
+    background-color: var(--black);
+}
+
+/*tours Ends*/
+
+/*destinations section Starts*/
+.destinations {
+    background: url(../images/black.jpg) no-repeat rgba(0, 0, 0, .22);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+
+
+
+.destinations .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+
+}
+
+
+
+.destinations .grid .box {
+    position: relative;
+    height: 40rem;
+    overflow: hidden;
+    border-radius: .5rem;
+
+}
+
+
+
+.destinations .grid .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
+
+.destinations .grid .box h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-black);
+    backdrop-filter: blur(.4rem);
+    transition: .2s linear;
+    opacity: 0;
+}
+
+
+
+.destinations .grid .box h3 a {
+    font-size: 2.5rem;
+    background-color: var(--light-bg);
+    color: var(--black);
+    display: block;
+    border-radius: .5rem;
+    padding: 1.2rem 3rem;
+    color: var(--white);
+
+}
+
+.destinations .grid .box h3 a:hover {
+    color: var(--main-color);
+    background-color: var(--light-black);
+}
+
+
+
+.destinations .grid .box:hover h3 {
+    opacity: 1;
+}
+
+/*destinations section Ends*/
+
+
+/*contact section starts*/
+.contact {
+    background: url(../images/abouttt.jpg) no-repeat rgba(0, 0, 0, .5);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: 9rem;
+}
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.contact .row .map {
+    width: 100%;
+    flex: 1 1 40rem;
+    padding: 2rem;
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    backdrop-filter: blur(.4rem);
+}
+
+.contact .row form {
+
+    flex: 1 1 40rem;
+    padding: 2rem;
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    backdrop-filter: blur(.4rem);
+}
+
+.contact .row form h3 {
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--white);
+    padding-bottom: 1rem;
+}
+
+.contact .row form .box {
+    width: 100%;
+    margin: 2rem 0;
+    border-radius: .5rem;
+    background-color: var(--light-black);
+    padding: 1.639rem;
+    font-size: 2.2rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.contact .row form .box::placeholder {
+    color: var(--white);
+}
+
+.contact .row form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.contact .grid {
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    justify-content: center;
+    gap: 1.5rem;
+
+}
+
+.contact .grid .box {
+    padding: 3rem 2rem;
+    background-color: var(--light-black);
+    border-radius: .5rem;
+    backdrop-filter: blur(.4rem);
+    text-align: center;
+}
+
+.contact .grid .box i {
+    height: 5rem;
+    width: 6rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    background-color: var(--light-white);
+    border-radius: .5rem;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+
+}
+
+.contact .grid .box h3 {
+    padding: .5rem 0;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.contact .grid .box a {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    color: var(--light-white);
+    line-height: 1.5;
+    text-transform: none;
+}
+
+.contact .grid .box a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+
+.contact .credit {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    color: var(--light-white);
+
+}
+
+.contact .credit span {
+    color: var(--main-color);
+}
+
+/*contact section ends*/
+
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background: #fefeff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-container.active {
+    display: none;
+}
+
+.loader-container img {
+    height: 50rem;
+}
+
+
+/* cairo section starts */
+.cairo {
+    background: url('../images/cairo.webp') no-repeat rgba(0, 0, 0, .67);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+
+
+.cairo .grid {
+    min-width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border: 3rem double rgba(0, 0, 0, .29);
+    border-radius: .5rem;
+    background: rgba(187, 187, 187, 0.198);
+    padding: 3rem;
+    align-items: center;
+    border-radius: 10rem;
+    margin: 1.9rem;
+}
+
+.cairo .grid .content {
+    flex: 1 1 40rem;
+}
+
+.cairo .grid .image-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex: 1 1 50rem;
+}
+
+.cairo .grid .image-container .small-image {
+    width: 20%;
+}
+
+.cairo .grid .image-container .big-image {
+    width: 100%;
+    padding: 2rem;
+}
+
+.cairo .grid .image-container .small-image img {
+    width: 100%;
+    padding: 0.6rem;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    cursor: pointer;
+    border-radius: 2.5rem;
+}
+
+.cairo .grid .image-container .small-image img:hover {
+    background: var(--light-black);
+}
+
+.cairo .grid .image-container .big-image img {
+    width: 100%;
+}
+
+.cairo .grid .image-container .big-image img {
+    border-radius: 4rem;
+    border: .45rem solid rgba(0, 0, 0, .1);
+}
+
+.cairo .grid .image-container .big-image img:hover {
+    transform: scale(1.05);
+    border: .3rem solid rgba(0, 0, 0, .2);
+}
+
+
+.cairo .grid .content h3 {
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.cairo .grid .content .stars i {
+    font-size: 1.7rem;
+    color: rgb(255, 256, 52);
+    padding: 1.5rem 0;
+}
+
+.cairo .grid .content p {
+    font-size: 2rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.cairo .grid .content .price {
+    font-size: 2.5rem;
+    color: var(--white);
+    font-weight: bolder;
+}
+
+.cairo .grid .content .price span {
+    font-size: 1.5rem;
+    color: red;
+    text-decoration: line-through;
+}
+
+.cairo .grid .content .btn {
+    width: 90%;
+    margin-left: 2rem;
+    padding: 1rem;
+    font-size: 2.2rem;
+}
+
+/* cairo section ends */
+
+/* alexandria section starts */
+.alexandria {
+    background: url('../images/alexandria1.jpeg') no-repeat rgba(0, 0, 0, .67);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+
+
+.alexandria .grid {
+    min-width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: 3rem double rgba(0, 0, 0, .29);
+    border-radius: .5rem;
+    background: rgba(187, 187, 187, 0.198);
+    padding: 2rem;
+    align-items: center;
+    border-radius: 10rem;
+    margin: 1.5rem;
+}
+
+.alexandria .grid .content {
+    flex: 1 1 40rem;
+}
+
+.alexandria .grid .image-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex: 1 1 50rem;
+}
+
+.alexandria .grid .image-container .small-image {
+    width: 20%;
+}
+
+.alexandria .grid .image-container .big-image {
+    width: 100%;
+    padding: 2rem;
+}
+
+.alexandria .grid .image-container .small-image img {
+    width: 100%;
+    padding: 0.6rem;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    cursor: pointer;
+    border-radius: 2.5rem;
+}
+
+.alexandria .grid .image-container .small-image img:hover {
+    background: var(--light-black);
+}
+
+.alexandria .grid .image-container .big-image img {
+    width: 100%;
+}
+
+.alexandria .grid .image-container .big-image img {
+    border-radius: 4rem;
+    border: .45rem solid rgba(0, 0, 0, .1);
+}
+
+.alexandria .grid .image-container .big-image img:hover {
+    transform: scale(1.05);
+    border: .3rem solid rgba(0, 0, 0, .2);
+}
+
+
+.alexandria .grid .content h3 {
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.alexandria .grid .content .stars i {
+    font-size: 1.7rem;
+    color: rgb(255, 256, 52);
+    padding: 1.5rem 0;
+}
+
+.alexandria .grid .content p {
+    font-size: 2rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.alexandria .grid .content .price {
+    font-size: 2.5rem;
+    color: var(--white);
+    font-weight: bolder;
+}
+
+.alexandria .grid .content .price span {
+    font-size: 1.5rem;
+    color: red;
+    text-decoration: line-through;
+}
+
+.alexandria .grid .content .btn {
+    width: 90%;
+    margin-left: 2rem;
+    padding: 1rem;
+    font-size: 2.2rem;
+}
+
+/* alexandria section ends */
+
+/* dahab section starts */
+.dahab {
+    background: url('../images/dahab.jpg') no-repeat rgba(0, 0, 0, .67);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+
+
+.dahab .grid {
+    min-width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: 3rem double rgba(0, 0, 0, .29);
+    border-radius: .5rem;
+    background: rgba(187, 187, 187, 0.198);
+    padding: 2rem;
+    align-items: center;
+    border-radius: 10rem;
+    margin: 1.5rem;
+}
+
+.dahab .grid .content {
+    flex: 1 1 40rem;
+}
+
+.dahab .grid .image-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex: 1 1 50rem;
+}
+
+.dahab .grid .image-container .small-image {
+    width: 20%;
+}
+
+.dahab .grid .image-container .big-image {
+    width: 100%;
+    padding: 2rem;
+}
+
+.dahab .grid .image-container .small-image img {
+    width: 100%;
+    padding: 0.6rem;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    cursor: pointer;
+    border-radius: 2.5rem;
+}
+
+.dahab .grid .image-container .small-image img:hover {
+    background: var(--light-black);
+}
+
+.dahab .grid .image-container .big-image img {
+    width: 100%;
+}
+
+.dahab .grid .image-container .big-image img {
+    border-radius: 4rem;
+    border: .45rem solid rgba(0, 0, 0, .1);
+}
+
+.dahab .grid .image-container .big-image img:hover {
+    transform: scale(1.05);
+    border: .3rem solid rgba(0, 0, 0, .2);
+}
+
+
+.dahab .grid .content h3 {
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.dahab .grid .content .stars i {
+    font-size: 1.7rem;
+    color: rgb(255, 256, 52);
+    padding: 1.5rem 0;
+}
+
+.dahab .grid .content p {
+    font-size: 2rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.dahab .grid .content .price {
+    font-size: 2.5rem;
+    color: var(--white);
+    font-weight: bolder;
+}
+
+.dahab .grid .content .price span {
+    font-size: 1.5rem;
+    color: red;
+    text-decoration: line-through;
+}
+
+.dahab .grid .content .btn {
+    width: 90%;
+    margin-left: 2rem;
+    padding: 1rem;
+    font-size: 2.2rem;
+}
+
+/* dahab section ends */
+
+
+/* register section starts */
+.register {
+    background: url('../images/black.jpg') no-repeat rgba(0, 0, 0, .22);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.register .flex {
+    min-height: calc(45vh - 1rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12rem;
+}
+
+.register .flex form {
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 70rem;
+    backdrop-filter: blur(.4rem);
+}
+
+.register .flex form h3 {
+    font-size: 2.5rem;
+    color: var(--white);
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.register .flex form p {
+    padding-top: 1rem;
+    font-size: 1.7rem;
+    color: var(--light-white);
+}
+
+.register .flex form p a {
+    padding-top: 1rem;
+    font-size: 1.7rem;
+    color: var(--white);
+}
+
+.register .flex form p a:hover {
+    color: var(--main-color);
+}
+
+.register .flex form .box {
+    width: 100%;
+    border-radius: 5rem;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--white);
+    text-transform: none;
+    background: var(--light-black);
+    margin: 1rem 0;
+}
+
+.register .flex form .box::placeholder {
+    color: var(--light-white);
+}
+
+/* register section ends */
+
+
+
+/* footer section starts */
+.footer {
+    background: url('../images/footer5.jpeg') no-repeat rgba(0, 0, 0, .66);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+
+}
+
+.footer .box-container {
+    padding: 5rem 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+    color: var(--main-color);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.footer .box-container .box .map {
+    width: 100%;
+    padding-top: 4rem;
+}
+
+.footer .share {
+    padding: 1rem 10%;
+    text-align: center;
+}
+
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--main-color);
+    margin: 0 .3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover {
+    background: var(--black);
+}
+
+.footer .credit {
+    padding: 5rem 10%;
+    border-top: var(--border);
+    margin-top: 2rem;
+    padding-top: 2.5em;
+    font-size: 2rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.footer .credit span {
+    color: var(--main-color);
+}
+/* footer section ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .heading {
+        font-size: 5rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width:768px) {
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .flex {
+        position: relative;
+    }
+
+    .header .flex .navbar {
+        position: absolute;
+        top: 100%;
+        left: 2rem;
+        right: 2rem;
+        background-color: var(--light-black);
+        backdrop-filter: blur(.4rem);
+        border-radius: .5rem;
+        transform: scale(0);
+        transform-origin: top right;
+        padding: 1.5rem .5rem;
+    }
+
+    .header .flex .navbar.active {
+        transform: scale(1);
+    }
+
+    .header .flex .navbar a {
+        display: block;
+        padding: 1rem;
+        margin: .5rem 1.5rem;
+        color: var(--white);
+        border-radius: .5rem;
+    }
+
+
+
+    .header .flex .new .fa-bars {
+        position: absolute;
+        font-size: 3rem;
+        top: 50%;
+        right: 2rem;
+    }
+
+    .header .flex .logoo img {
+        width: 30rem;
+        height: 140%;
+        position: absolute;
+        left: -13px;
+        top: -50px;
+    }
+
+
+    .header .flex .navbar a:hover {
+        background-color: var(--light-bg);
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 32%;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+
+    }
+
+    .header .flex .logoo img {
+    width: 25rem;
+    height: 140%;
+    position: absolute;
+    left: -13px;
+    top: -25px;
+    }
+
+
+}
