@@ -32,6 +32,13 @@ class AuthController extends Controller
 
         return redirect('/')->with('success', 'User created successfully');
     }
+
+    public function destroy()
+    {
+        auth()->logout();
+        return redirect('/');
+    }
+
 }
 
 

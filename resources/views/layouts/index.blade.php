@@ -12,7 +12,7 @@
         <div class="box" data-aos="fade-up">
         <div class="price"><i class="fas fa-dollar-sign"></i>{{ $offer->price }} <span>{{ $offer->original_price }}</span>
         </div>
-        <img src="{{ asset('images/offers/' . $offer->image) }}" class="image" alt="">
+        <img src="{{ asset('images/' . $offer->image) }}" class="image" alt="">
         <h3 class="name">{{ $offer->name }}</h3>
         <p class="address">{{ $offer->address }}</p>
         <a href="{{ route('trips.view', $offer->id) }}" class="btn">View more</a>
@@ -21,6 +21,10 @@
 </section>
 </div>
 </div>
+
+<script async src="https://cse.google.com/cse.js?cx=62274a9a48e074824" data-aos="fade-down">
+</script>
+<div class="gcse-search" data-aos="fade-down"></div>
     {{-- Seachbar --}}
 <div class="booking">
     <h1 class="heading" data-aos="zoom-out">Where to?</h1>
@@ -50,16 +54,17 @@
                 <h1 data-aos="zoom-in">Build a trip in minutes</h1>
                 <h2 data-aos="zoom-in">Get a personalized itinerary just for you, guided by traveler tips and
                     reviews.</h2>
-                <a href="#" class="btn" data-aos="zoom-out"><i class="fa-solid fa-location-dot"
-                        data-aos="fade-down"></i>Start a trip with AI </a>
+                    <a href="{{ url('/start-trip') }}" class="btn" data-aos="zoom-out">
+                        <i class="fa-solid fa-location-dot" data-aos="fade-down"></i>Start a trip with AI
+                    </a>
 
             </div>
 
         </div>
     </section> 
 </div>
+ 
 
-</div>
 
 
 @endsection

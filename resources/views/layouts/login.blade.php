@@ -7,13 +7,15 @@
     {{-- Signin --}}
     @if ($errors->any())
     @foreach ($errors->all() as $error)
-    <div class="alert">
+    <div class="alertc">
       <span> {{ $error }} </span>  
         <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
     </div>
     @endforeach
 @endif
-    <form method="POST" action="{{route('trips.signin')}}">
+    {{-- <form method="POST" action="{{route('trips.signin')}}"> --}}
+    <form method="POST" action="{{route('login')}}">
+
         @method('POST')
         @csrf
         <div class="input-group">

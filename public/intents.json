@@ -1,0 +1,138 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "yo",
+        "wassup",
+        "speak to me",
+        "i have a problem",
+        "i have an issue",
+        "good day",
+        "good evening",
+        "good afternoon",
+        ""
+      ],
+      "responses": [
+        "thank you for choosing smart trips, kind human , how may i help",
+        "thank you for choosing smart trips,  how would you like me to aid you??",
+        "thank you for choosing smart trips, what can I do for you?",
+        "thank you for choosing smart trips,  how can I help?",
+        "greetings,thank you for choosing smart trips, how may i assist you today?",
+        "hope you are having a wonderful day , what can i help you with?",
+        "iam present to assist you human, please tell me a way to help you :)",
+        "its good to see you here! ,thank you for choosing smart trips, please statewhat should i be helping you with "
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "adios",
+        "cha cha",
+        "cya",
+        "c you",
+        "good night",
+        "i will get to sleep",
+        "im getting off",
+        "see you soon",
+        "i will leave"
+      ],
+      "responses": [
+        "thank you for choosing smart trips and thanks for visiting",
+        "thank you for choosing smart trips, Have a nice day",
+        "thank you for choosing smart trips, Come back again soon.",
+        "thank you for choosing smart trips, im glad to have served such a sweet customer :)",
+        "thank you for choosing smart trips, i hope i served you well :)"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!",
+        "wonderful",
+        "thanks for helping",
+        "thanks for the help",
+        "you are amazing",
+        "nice",
+        "NICE",
+        "nice!"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "it's My pleasure, human",
+        "happy to be of service",
+        "glad to have served you well sir",
+        "its my duty to serve you sir, no need to thank me :)"
+      ]
+    },
+    {
+      "tag": "cancel booking",
+      "patterns": [
+        "i want to cancel my booking",
+        "cancel my trip",
+        "cancel my plan",
+        "i dont want to travel",
+        "i dont want to travel anymore",
+        "please cancel the booked trip",
+        "can you cancel my trip",
+        "do you have access to cancelling the trip?"
+      ],
+      "responses": [
+        "iam sorry to hear about your discomfort with our services , please click on the provided link to start going through your request"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "refund",
+      "patterns": [
+        "How long does refund take?"
+      ],
+      "responses": [
+        "refund takes 2-4 business days"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?",
+        "make me laugh",
+        "make my day better",
+        "tell me a dad joke",
+        "enlighten me with your sense of humor"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison.",
+        "what did one snowman say to theother? , hey do you smell carrots?",
+        "one joke coming up!,what is a sea monster's favourite snack?, ships and dips"
+      ]
+    }
+  ]
+}

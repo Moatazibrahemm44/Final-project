@@ -11,10 +11,10 @@
             <div class="box" data-aos="fade-up">
             <div class="price"><i class="fas fa-dollar-sign"></i>{{ $offer->price }} 
             </div>
-            <img src="{{ asset('images/offers/' . $offer->image) }}" class="image" alt="">
+            <img src="{{ asset('images/' . $offer->image) }}" class="image" alt="">
             <h3 class="name">{{ $offer->name }}</h3>
             <p class="address">{{ $offer->address }}</p>
-            <a href="" class="btn">View more</a>
+            <a href="{{ route('trips.view', $offer->id) }}" class="btn">View more</a>
         </div>
         @endforeach
     </section>

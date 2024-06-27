@@ -43,6 +43,7 @@ class loginController extends Controller
         }
 
         // Authentication passed
+        session()->regenerate();
         Auth::login($user);
         return redirect()->intended('/');
     }
