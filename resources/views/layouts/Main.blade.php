@@ -81,52 +81,54 @@
 <!-- custom js file link -->
 @yield('content')
 <!--footer section starts-->
-    <div class="footer">
+<div class="footer">
 
-        <div class="box-container">
-            <div class="box" data-aos="zoom-out">
-                <h3>Our location</h3>                
-                <a href="trips/1"> <i class="fas fa-map-marker-alt"> </i> Cairo </a>
-                <a href="trips/2"> <i class="fas fa-map-marker-alt"> </i> Alexandria </a>
-                <a href="trips/3"> <i class="fas fa-map-marker-alt"> </i> Dahab </a>
+    <div class="box-container">
+        <div class="box" data-aos="zoom-out">
+            <h3>Our location</h3>
+            <a href="trips/1"> <i class="fas fa-map-marker-alt"> </i> Cairo </a>
+            <a href="trips/2"> <i class="fas fa-map-marker-alt"> </i> Alexandria </a>
+            <a href="trips/3"> <i class="fas fa-map-marker-alt"> </i> Dahab </a>
 
-            </div>
 
-            <div class="box" data-aos="zoom-out">
-                <h3>quick links</h3>
-                <a href="../../home.html"> <i class="fas fa-arrow-right"> </i> home </a>
-                <a href="../../about.html"> <i class="fas fa-arrow-right"> </i> About </a>
-                <a href="../../tours.html"> <i class="fas fa-arrow-right"> </i> tours </a>
-                <a href="../../html"> <i class="fas fa-arrow-right"> </i> Destinations </a>
-                <a href="../../contact.html"> <i class="fas fa-arrow-right"> </i> contact </a>
-            </div>
-
-            <div class="box" data-aos="zoom-out">
-                <h3>extra links</h3>
-                <a href="profile.html"> <i class="fas fa-arrow-right"> </i> account info </a>
-                <a href="contact.html"> <i class="fas fa-arrow-right"> </i> our services </a>
-            </div>
-
-            <div class="box" data-aos="zoom-out">
-                <h3>contact info</h3>
-                <a href="#"> <i class="fas fa-phone"> </i> +201116440052</a>
-                <a href="#"> <i class="fas fa-phone"> </i> +201147393993</a>
-                <a href="#"> <i class="fas fa-envelope"></i>SmartTrips@gmail.com</a>
-                <img src="../../images/worldmap1.png" class="map" alt="">
-            </div>
 
         </div>
-        <div class="share" data-aos="fade-up">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <!-- <a href="#" class="fab fa-linkedin"></a>
-            <a href="#" class="fab fa-pinterest"></a> -->
+
+        <div class="box" data-aos="zoom-out">
+            <h3>quick links</h3>
+            <a href="{{ route('trips.index') }}"> <i class="fas fa-arrow-right"> </i> home </a>
+            <a href="{{ route('trips.about') }}"> <i class="fas fa-arrow-right"> </i> About </a>
+            <a href="{{ route('trips.show')}}"> <i class="fas fa-arrow-right"> </i> tours </a>
+            <a href="{{ route('trips.destinations') }}"> <i class="fas fa-arrow-right"> </i> Destinations </a>
+            <a href="{{ route('trips.contact') }}"> <i class="fas fa-arrow-right"> </i> contact </a>
         </div>
-        <div class="credit">created by <span>SmartTrips Team</span> | all rights reserved</div>
+
+        <div class="box" data-aos="zoom-out">
+            <h3>extra links</h3>
+            <a href="{{ route('trips.about') }}"> <i class="fas fa-arrow-right"> </i> account info </a>
+            <a href="{{ route('trips.contact') }}"> <i class="fas fa-arrow-right"> </i> our services </a>
+        </div>
+
+        <div class="box" data-aos="zoom-out">
+            <h3>contact info</h3>
+            <a href="{{ url('/gmail') }}"> <i class="fas fa-envelope"></i>SmartTrips@gmail.com</a>
+            <a href="#"> <i class="fas fa-phone"> </i> +201116440052</a>
+            <a href="#"> <i class="fas fa-phone"> </i> +201147393993</a>
+            <img src="images/worldmap1.png" class="map" alt="">
+        </div>
 
     </div>
-    <!--footer section ends-->
+    <div class="share" data-aos="fade-up">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <!-- <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a> -->
+    </div>
+    <div class="credit">created by <span>SmartTrips Team</span> | all rights reserved</div>
+
+</div>
+<!--footer section ends-->
 <!--footer section ends-->
 <div class="chatbox">
     <div class="chatbox__support">
