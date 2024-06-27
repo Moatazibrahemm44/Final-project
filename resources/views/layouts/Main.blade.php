@@ -112,7 +112,7 @@
                 <a href="#"> <i class="fas fa-phone"> </i> +201116440052</a>
                 <a href="#"> <i class="fas fa-phone"> </i> +201147393993</a>
                 <a href="#"> <i class="fas fa-envelope"></i>SmartTrips@gmail.com</a>
-                <img src="images/worldmap1.png" class="map" alt="">
+                <img src="../../images/worldmap1.png" class="map" alt="">
             </div>
 
         </div>
@@ -132,7 +132,7 @@
     <div class="chatbox__support">
         <div class="chatbox__header">
             <div class="chatbox__image--header">
-                <img src="./images/chatbox-icon1.png" alt="User Image">
+                <img src="/images/chatbox-icon1.png" alt="User Image">
             </div>
             <div class="chatbox__content--header">
                 <h4 class="chatbox__heading--header">Chat Support</h4>
@@ -148,6 +148,6 @@
         </div>
     </div>
     <div class="chatbox__button">
-        <button><img src="./images/chatbox-icon.png" alt="Chat Icon"/></button>
+        <button><img src="/images/chatbox-icon.png" alt="Chat Icon"/></button>
     </div>
 </div>

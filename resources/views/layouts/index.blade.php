@@ -22,13 +22,13 @@
 </div>
 </div>
 
-<script async src="https://cse.google.com/cse.js?cx=62274a9a48e074824" data-aos="fade-down">
+{{-- <script async src="https://cse.google.com/cse.js?cx=62274a9a48e074824" data-aos="fade-down">
 </script>
-<div class="gcse-search" data-aos="fade-down"></div>
+<div class="gcse-search" data-aos="fade-down"></div> --}}
     {{-- Seachbar --}}
 <div class="booking">
-    <h1 class="heading" data-aos="zoom-out">Where to?</h1>
-    <div class="inputBox" data-aos="fade-down">
+    <h1 class="heading" data-aos="zoom-out">Explore With Ai</h1>
+    {{-- <div class="inputBox" data-aos="fade-down">
         <div class="search">
             <label for="search-box" class="fas fa-search"></label>
             <input type="search" placeholder="place you want to visit" list="input" id="search-box">
@@ -43,7 +43,7 @@
             <option >Luxor</option>
             <option>Gouna</option>
         </datalist>
-    </div>
+    </div> --}}
     <section class="gril">
 
         <div class="box" data-aos="fade-up">

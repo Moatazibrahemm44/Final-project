@@ -17,6 +17,7 @@
 
 </head>
 <body style="overflow: hidden;">
+    
 
        
     
@@ -134,6 +135,7 @@
 
     </div>
     <!--footer section ends-->
+    
     <div class="chatbox">
         <div class="chatbox__support">
             <div class="chatbox__header">
@@ -157,4 +159,5 @@
             <button><img src="/images/chatbox-icon.png" alt="Chat Icon"/></button>
         </div>
     </div>
+    
     
