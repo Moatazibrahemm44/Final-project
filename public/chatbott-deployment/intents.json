@@ -1,0 +1,255 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "yo",
+        "wassup",
+        "speak to me",
+        "i have a problem",
+        "i have an issue",
+        "good day",
+        "good evening",
+        "good afternoon"
+      ],
+      "responses": [
+        "Thank you for choosing Smart Trips, kind human. How may I help?",
+        "Thank you for choosing Smart Trips. How would you like me to aid you?",
+        "Thank you for choosing Smart Trips. What can I do for you?",
+        "Thank you for choosing Smart Trips. How can I help?",
+        "Greetings! Thank you for choosing Smart Trips. How may I assist you today?",
+        "Hope you are having a wonderful day. What can I help you with?",
+        "I am present to assist you, human. Please tell me a way to help you :)",
+        "It's good to see you here! Thank you for choosing Smart Trips. Please state what should I be helping you with."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "adios",
+        "cha cha",
+        "cya",
+        "c you",
+        "good night",
+        "I will get to sleep",
+        "I'm getting off",
+        "see you soon",
+        "I will leave"
+      ],
+      "responses": [
+        "Thank you for choosing Smart Trips and thanks for visiting.",
+        "Thank you for choosing Smart Trips. Have a nice day.",
+        "Thank you for choosing Smart Trips. Come back again soon.",
+        "Thank you for choosing Smart Trips. I'm glad to have served such a sweet customer :)",
+        "Thank you for choosing Smart Trips. I hope I served you well :)"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thanks a lot!",
+        "Wonderful",
+        "Thanks for helping",
+        "Thanks for the help",
+        "You are amazing",
+        "Nice",
+        "NICE",
+        "Nice!"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "It's my pleasure, human.",
+        "Happy to be of service.",
+        "Glad to have served you well, sir.",
+        "It's my duty to serve you, sir. No need to thank me :)"
+      ]
+    },
+    {
+      "tag": "cancel booking",
+      "patterns": [
+        "I want to cancel my booking",
+        "Cancel my trip",
+        "Cancel my plan",
+        "I don't want to travel",
+        "I don't want to travel anymore",
+        "Please cancel the booked trip",
+        "Can you cancel my trip?",
+        "Do you have access to canceling the trip?"
+      ],
+      "responses": [
+        "I am sorry to hear about your discomfort with our services. Please click on the provided link to start processing your request."
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard, and Paypal.",
+        "We accept most major credit cards, and Paypal."
+      ]
+    },
+    {
+      "tag": "refund",
+      "patterns": [
+        "How long does a refund take?"
+      ],
+      "responses": [
+        "Refunds take 2-4 business days."
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?",
+        "Make me laugh",
+        "Make my day better",
+        "Tell me a dad joke",
+        "Enlighten me with your sense of humor"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison.",
+        "What did one snowman say to the other? 'Hey, do you smell carrots?'",
+        "One joke coming up! What is a sea monster's favorite snack? Ships and dips."
+      ]
+    },
+    {
+      "tag": "lost_luggage",
+      "patterns": [
+        "I lost my luggage",
+        "Where is my luggage?",
+        "My luggage is missing",
+        "Lost baggage"
+      ],
+      "responses": [
+        "I'm sorry to hear that. Please provide me with your baggage claim details so I can assist you further.",
+        "I understand the inconvenience. Let's track your luggage. Please provide me with your flight and baggage details."
+      ]
+    },
+    {
+      "tag": "destination_information",
+      "patterns": [
+        "Tell me about [destination]",
+        "Information about [destination]",
+        "What can I do in [destination]",
+        "Places to visit in [destination]",
+        "Things to do in [destination]"
+      ],
+      "responses": [
+        "Certainly! Here are some popular attractions in [destination]: [List attractions]"
+      ]
+    },
+    {
+      "tag": "flight_information",
+      "patterns": [
+        "Flight status",
+        "Is my flight on time?",
+        "Flight delays",
+        "Arrival time of my flight"
+      ],
+      "responses": [
+        "To check your flight status, please provide your flight number and departure date/time.",
+        "I can help you with your flight details. Please provide me with your flight number."
+      ]
+    },
+    {
+      "tag": "hotel_booking",
+      "patterns": [
+        "Book a hotel",
+        "Reserve a room",
+        "Find me a hotel",
+        "Hotel availability",
+        "I need a place to stay"
+      ],
+      "responses": [
+        "Sure! Where are you planning to stay? Please provide me with your check-in and check-out dates.",
+        "Let's find you the perfect hotel. Please specify your destination, check-in and check-out dates."
+      ]
+    },
+    {
+      "tag": "local_transportation",
+      "patterns": [
+        "Local transportation options",
+        "How to get around [destination]",
+        "Public transport in [destination]",
+        "Taxi services in [destination]"
+      ],
+      "responses": [
+        "Here are some transportation options in [destination]: [List transportation options]",
+        "You can get around using buses, taxis, or rideshare services like Uber and Lyft."
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "What's the weather like in [location]?",
+        "Weather forecast for [location]",
+        "Will it rain in [location] today?",
+        "Temperature in [location]"
+      ],
+      "responses": [
+        "Let me check the weather for you. Please provide me with the location.",
+        "You can check the weather in [location] using a weather app or website."
+      ]
+    },
+    {
+      "tag": "change_flight",
+      "patterns": [
+        "Change my flight",
+        "Modify flight booking",
+        "Can I change my flight?",
+        "Reschedule my flight"
+      ],
+      "responses": [
+        "I can assist you with changing your flight. Please provide me with your current flight details and the changes you'd like to make.",
+        "To change your flight, please provide me with your flight number and desired new travel dates."
+      ]
+    },
+    {
+      "tag": "customer_support",
+      "patterns": [
+        "I need help",
+        "Customer service",
+        "Support assistance",
+        "Talk to a representative"
+      ],
+      "responses": [
+        "I'm here to help. Please describe the issue you're facing so I can assist you.",
+        "What specific assistance do you require? I'm here to help resolve any concerns you have."
+      ]
+    },
+    {
+      "tag": "emergency_contact",
+      "patterns": [
+        "Emergency contact information",
+        "Who do I call in case of emergency?",
+        "Emergency assistance",
+        "Emergency hotline"
+      ],
+      "responses": [
+        "For emergencies, please dial emergency services (e.g., 911) or contact local authorities.",
+        "In case of emergencies during your travel, please contact the nearest emergency services or your travel assistance provider."
+      ]
+    }
+  ]
+}
