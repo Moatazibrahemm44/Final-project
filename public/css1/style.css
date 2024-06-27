@@ -583,7 +583,7 @@ input:not(:placeholder-shown)~label {
 }
 
 .booking .book-form .flex .inputBox .checkout {
-  width: 100%;
+  width: 58.8rem;
   padding: 1.2rem 1.4rem;
   font-size: 2.5rem;
   color: var(--white);
