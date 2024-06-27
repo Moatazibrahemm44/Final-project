@@ -16,7 +16,8 @@
                         month** become better travelers, from planning to booking to taking a trip. Travelers across the
                         globe use the SmartTrips site and app to discover where to stay, what to do and where to eat based
                         on guidance from those who have been there before.</P>
-                    <a href="contact.html" class="btn">contact us</a>
+                        <a href="{{ route('trips.contact') }}" class="btn">contact us</a>
+
                 </div>
             </div>
 
